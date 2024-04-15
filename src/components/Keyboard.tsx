@@ -38,7 +38,7 @@ function Keyboard({
 	activeLetters,
 	inactiveLetters,
 	addGuessedLetter,
-	disabled,
+	disabled = false,
 }: KeyboardProps) {
 	return (
 		<div className="grid grid-cols-keyboardGrid gap-2">
