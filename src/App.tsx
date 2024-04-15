@@ -46,7 +46,7 @@ function App() {
 		return () => {
 			document.removeEventListener("keypress", handler);
 		};
-	}, [guessedLetters]);
+	}, [guessedLetters, addGuessedLetter]);
 
 	useEffect(() => {
 		const handler = (e: KeyboardEvent) => {
